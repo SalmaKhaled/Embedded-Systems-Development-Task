@@ -24,7 +24,7 @@ void setup()
 {
   pinMode(inPin, INPUT);
   pinMode(outPin, OUTPUT);
-  attachInterrupt(digitalPinToInterrupt(inPin),ISR_button,RISING);
+  attachInterrupt(digitalPinToInterrupt(inPin),ISR_button,RISING);    //interrupt for switch handling 
   Serial.begin(9600);
 }
 
